@@ -9,5 +9,7 @@ let importObject = {
 WebAssembly.instantiateStreaming(fetch('main.wasm'), importObject)
 .then(results => {
   // Do something with the results!
-  console.log(results.instance.exports.add(1,2,3))
+  console.log(results.instance.exports.add(1,1))
+  console.log(results.instance.exports.sub(1,2))
+  console.log(results.instance.exports.mul(1,2))
 });
