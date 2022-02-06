@@ -37,3 +37,8 @@ int sum(int *a, int l)
 	}
 	return s;
 }
+EMSCRIPTEN_KEEPALIVE
+int max(int a, int b)
+{
+	return (a < b) ? a : b;
+}
